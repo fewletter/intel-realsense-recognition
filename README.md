@@ -8,4 +8,8 @@ We use intelrealsense l515 to capture both rgb and depth frames
 
 We use i3d model to train our data, and you can find the model structure in pytorch_i3d
 
+The opnp2.py file can see the histogram of the depth pixel distribution in depth frames
+
+![image](https://user-images.githubusercontent.com/80392504/135631744-74d72467-75e9-41e0-a3dc-2158d5c7ef44.png)
+
 
