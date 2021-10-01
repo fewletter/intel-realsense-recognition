@@ -6,5 +6,6 @@ We use intelrealsense l515 to capture both rgb and depth frames
 ![image](https://user-images.githubusercontent.com/80392504/135630229-6f171837-4905-41a4-a352-049fe5fa7216.png) Depth frames
 ![image](https://user-images.githubusercontent.com/80392504/135630384-850154b3-b59a-4804-94ae-de832e4adb89.png) binary hand
 
+We use i3d model to train our data, and you can find the model structure in pytorch_i3d
 
 
