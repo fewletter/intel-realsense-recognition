@@ -8,10 +8,6 @@ We use intelrealsense l515 to capture both rgb and depth frames
 
 We use i3d model to train our data, and you can find the model structure in pytorch_i3d
 
-The opnp2.py file can see the histogram of the depth pixel distribution in depth frames
-
-![image](https://user-images.githubusercontent.com/80392504/135631744-74d72467-75e9-41e0-a3dc-2158d5c7ef44.png)
-
 In the videotransform.py file, there is a new data augment way which I called randompad
 here is how it works:
 
@@ -22,3 +18,12 @@ step 2
 ![image](https://user-images.githubusercontent.com/80392504/135632548-b69893f2-741c-4508-8d08-de0ec78f832a.png)
 ![image](https://user-images.githubusercontent.com/80392504/135632570-33519316-3545-4b23-a293-0cd508aa96e6.png)
 final result(the place where hands are won't be the same every times) 
+
+
+The opnp2.py file can see the histogram of the depth pixel distribution in depth frames
+
+![image](https://user-images.githubusercontent.com/80392504/135631744-74d72467-75e9-41e0-a3dc-2158d5c7ef44.png)
+
+We can create a image by the depth distribution
+
+![image](https://user-images.githubusercontent.com/80392504/137342647-037a26de-9503-4a4d-8a74-b9d77c0eff23.png)
