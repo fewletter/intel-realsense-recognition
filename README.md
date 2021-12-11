@@ -47,9 +47,7 @@
     * 20211109_174633.bag
     * 20211109_174638.bag
     * 20211109_174642.bag
-             .
-             .
-             .
+    * ...
             
         
 * npy file
@@ -64,9 +62,7 @@
         * depth_1_1_6.npy
         * depth_1_1_7.npy
         * depth_1_1_8.npy
-                 .
-                 .
-                 .
+        * ...
     * depthraw
         * depthraw_1_1_1.npy
         * depthraw_1_1_2.npy
@@ -76,6 +72,4 @@
         * depthraw_1_1_6.npy
         * depthraw_1_1_7.npy
         * depthraw_1_1_8.npy
-                 .
-                 .
-                 .
+        * ...
