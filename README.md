@@ -6,9 +6,8 @@ Created on Sat Dec 11 22:37:35 2021
 """
 
 #Code
-|
--opnp.py /n
--opnp2.py /n
--opnp3.py /n
--opnp4.py /n
--opnp5.py /n
+opnp.py 
+opnp2.py 
+opnp3.py 
+opnp4.py 
+opnp5.py 
