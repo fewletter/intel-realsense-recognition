@@ -35,3 +35,47 @@
 * videotransform.py
     * The usage of videotransform.py
         * transform the video, in the training I use RandomPadResizecrop
+
+# -*- The Dataset -*-
+#Hand file
+
+* bag file
+    * 20211109_174608.bag
+    * 20211109_174618.bag
+    * 20211109_174623.bag
+    * 20211109_174628.bag
+    * 20211109_174633.bag
+    * 20211109_174638.bag
+    * 20211109_174642.bag
+             .
+             .
+             .
+            
+        
+* npy file
+    * THE MEANING OF THE NUMBER:
+        * The form of this video_The number of person_The number of the floor_How many times has this floor be filmed 
+    * 8bit_depth
+        * depth_1_1_1.npy
+        * depth_1_1_2.npy
+        * depth_1_1_3.npy
+        * depth_1_1_4.npy
+        * depth_1_1_5.npy
+        * depth_1_1_6.npy
+        * depth_1_1_7.npy
+        * depth_1_1_8.npy
+                 .
+                 .
+                 .
+    * depthraw
+        * depthraw_1_1_1.npy
+        * depthraw_1_1_2.npy
+        * depthraw_1_1_3.npy
+        * depthraw_1_1_4.npy
+        * depthraw_1_1_5.npy
+        * depthraw_1_1_6.npy
+        * depthraw_1_1_7.npy
+        * depthraw_1_1_8.npy
+                 .
+                 .
+                 .
