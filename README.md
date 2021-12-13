@@ -68,6 +68,10 @@
         * depth_1_1_7.npy
         * depth_1_1_8.npy
         * ...
+        * * video demo 
+        > ![image](https://user-images.githubusercontent.com/80392504/145843852-f9949a82-a5c6-4b45-988a-99d0c4ba364e.png)
+        * image demo 
+        > ![image](https://user-images.githubusercontent.com/80392504/145843698-c4b477c0-dc27-41b3-b04a-4ba2117de523.png)
     * depthraw
         * depthraw_1_1_1.npy
         * depthraw_1_1_2.npy
