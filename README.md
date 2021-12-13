@@ -78,7 +78,9 @@
         * depthraw_1_1_7.npy
         * depthraw_1_1_8.npy
         * ...
-        * video demo ![image](https://user-images.githubusercontent.com/80392504/145842462-4f762e3b-01f2-40ee-bbee-5a2af0e50cae.png)
-        * image demo ![image](https://user-images.githubusercontent.com/80392504/145842939-037d3d44-ac9d-41d7-8ee7-87a4cdf1d75f.png)
+        * video demo 
+        * ![image](https://user-images.githubusercontent.com/80392504/145842462-4f762e3b-01f2-40ee-bbee-5a2af0e50cae.png)
+        * image demo 
+        * ![image](https://user-images.githubusercontent.com/80392504/145842939-037d3d44-ac9d-41d7-8ee7-87a4cdf1d75f.png)
 
 
