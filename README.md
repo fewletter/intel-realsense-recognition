@@ -23,8 +23,8 @@
 * pytorch_i3d.py
 > The usage of pytorch_i3d.py:
 >> The structure of i3d model
->>> ![image](https://user-images.githubusercontent.com/80392504/145832866-9b508fd2-9cb4-4ab6-a183-f53553dc5532.png)
->>>![image](https://user-images.githubusercontent.com/80392504/145832942-c56ec63e-371c-4295-949c-96b1e754f82a.png)
+>>> ![image](https://user-images.githubusercontent.com/80392504/145832866-9b508fd2-9cb4-4ab6-a183-f53553dc5532.png) The structure of I3D
+>>> ![image](https://user-images.githubusercontent.com/80392504/145832942-c56ec63e-371c-4295-949c-96b1e754f82a.png) The structure of Inception Module(Inc.)
 * save_bgremoved.py
 > The usage of save_bgremoved.py:
 >> Transform depth raw file(16bit) to depth file(8bit) and save .bag files as .npy files
