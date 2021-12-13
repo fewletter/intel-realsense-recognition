@@ -45,6 +45,8 @@
 #Hand file
 
 * bag file
+    * What are in bag file?
+         * There are both RGB video(8bit) and Depth video(16bit) in the bag file 
     * 20211109_174608.bag
     * 20211109_174618.bag
     * 20211109_174623.bag
@@ -56,6 +58,9 @@
             
         
 * npy file
+    * What are in npy file?
+        * 8bit_depth are frames which are preprocessed by some codes
+        * depthraw are the depth frames which are saved in bag file 
     * THE MEANING OF THE NUMBER:
         * The form of this video_The number of person_The number of the floor_How many times has this floor be filmed 
     * 8bit_depth
