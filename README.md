@@ -10,13 +10,13 @@
 * opnp4.py
 * opnp5.py
 > The usage of the above files:
->> show the results of save_bgremoved.py and other ....py file, or show the result of preporcessing image
+>> Show the results of save_bgremoved.py and other ....py file, or show the result of preporcessing image
 * oprealsense.py
 > The usage of oprealsense.py:
->> open the Intel Realsense camera
+>> Open the Intel Realsense camera
 * prepare_data2.py
 > The usage of prepare_data2.py:
->> prepare the training data and testing data, save the data title as csv file
+>> Prepare the training data and testing data, save the data title as csv file
 * pytorch_c3d.py
 > The usage of pytorch_c3d.py:
 >> The structure of c3d model
