@@ -1,6 +1,6 @@
 # -*- Overview -*-
-The pytorch.py, train.py and videotransform.py is based on https://github.com/piergiaj/pytorch-i3d
-The oprealsense.py and save_bgremoved.py is based on https://github.com/IntelRealSense/librealsense/tree/master/wrappers/python/examples
+* The pytorch.py, train.py and videotransform.py is based on https://github.com/piergiaj/pytorch-i3d
+* The oprealsense.py and save_bgremoved.py is based on https://github.com/IntelRealSense/librealsense/tree/master/wrappers/python/examples
 # -*- The Usage of Files -*-
 """
 """
