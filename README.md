@@ -25,7 +25,8 @@ The I3D model is https://github.com/piergiaj/pytorch-i3d
 * pytorch_i3d.py
 > The usage of pytorch_i3d.py:
 >> The structure of i3d model
->>> ![image](https://user-images.githubusercontent.com/80392504/145832866-9b508fd2-9cb4-4ab6-a183-f53553dc5532.png) The structure of I3D is from "[Quo Vadis, Action Recognitio A New Model and the Kinetics Dataset](https://arxiv.org/abs/1705.07750)"
+>>> ![image](https://user-images.githubusercontent.com/80392504/145832866-9b508fd2-9cb4-4ab6-a183-f53553dc5532.png) 
+>>> The structure of I3D is from "[Quo Vadis, Action Recognitio A New Model and the Kinetics Dataset](https://arxiv.org/abs/1705.07750)"
 >>> 
 >>> ![image](https://user-images.githubusercontent.com/80392504/145832942-c56ec63e-371c-4295-949c-96b1e754f82a.png) The structure of Inception Module(Inc.)
 * save_bgremoved.py
