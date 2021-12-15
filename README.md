@@ -1,5 +1,5 @@
 # -*- Overview -*-
-The I3D model is https://github.com/piergiaj/pytorch-i3d
+The pytorch.py, train.py and videotransform.py is based on https://github.com/piergiaj/pytorch-i3d
 # -*- The Usage of Files -*-
 """
 """
