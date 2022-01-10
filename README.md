@@ -45,6 +45,87 @@ The code in this github are based on many talented people,including
 > The usage of videotransform.py
 >> Transform the video,and the data augmentation of this training is RandomPadResizecrop
 >>> The result of RandomPadResizecrop 
+    class RandomPadResizecrop(object):
+    def __init__(self):
+        '''
+        if data is contour,binary o_size = 640
+        if use opnp2.py to open the npfile o_size = 1280
+        '''
+        self.o_size = 640
+        self.size = 224
+    
+    def __call__(self,images):
+        images = np.array(images)
+        c,t,h,w = images.shape
+        clips = []
+        #紀錄手型座標極值
+        height_high = []
+        height_low = []
+        width_left = []
+        width_right= []
+        if c == 1:
+            images = np.transpose(images,[1,2,3,0])#clips[1,64,360,640] to clips[64,360,640,1]
+            images = np.squeeze(images,axis=3)#clips[64,360,640] [t,h,w]
+            '''
+            run every frame,each frame size is (360,640),get bounding rectangle(x,y,x+w,y+h)
+            '''
+            for frame in range(t):
+                ret,thresh = cv2.threshold(images[frame],10,255,0)#黑白影片所以閥值設10跟255
+                contours,hierachy = cv2.findContours(thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_NONE)
+                cnts = sorted(contours, key=cv2.contourArea)
+                for cnt in cnts:
+                    if cv2.contourArea(cnt) < 600*300 and cv2.contourArea(cnt) > 60*60:
+                        new_cnts = cnt
+                        x,y,w,h = cv2.boundingRect(new_cnts)
+                        height_high.append(y)
+                        height_low.append(y+h)
+                        width_left.append(x)
+                        width_right.append(x+w) 
+                
+            #找出極值中的最大最小值
+            x_left = min(width_left)
+            x_right = max(width_right)
+            y_low = min(height_high)
+            y_high = max(height_low)
+            
+            #告訴圖片要pad多少
+            pad_h = self.o_size-(y_high - y_low)
+            pad_w = self.o_size-(x_right - x_left)
+            part1 = random.randint(0,pad_h)
+            part2 = random.randint(0,pad_w)
+            
+            #進行randompad
+            #run every frame,get the randompad frame
+            for clip in range(t):
+                b = Image.fromarray(images[clip])
+                b = b.crop((x_left, y_low, x_right, y_high))   
+                pic = np.asarray(b)
+                
+                pic = np.pad(pic,((part1,pad_h-part1),(part2,pad_w-part2)),'constant')
+                pic = Image.fromarray(pic)
+                
+                #進行resize
+                pic = pic.resize((224,224),Image.BICUBIC)
+                pic = np.asarray(pic)
+                clips.append(pic)
+                
+            clips = np.expand_dims(clips, axis=0)#clips sizes back to [1,64,360,640]
+            
+        '''
+        if c == 3:
+            a = np.pad(images,((0,0),(0,0),(int((w-h)/self.num)*part1,int((w-h)/self.num)*(self.num-part1)),(0,0)),'constant',constant_values=((0,0),(0,0),(160,160),(0,0)))
+            images = np.transpose(a,[1,2,3,0])
+            for frame in range(t):
+                pic = Image.fromarray(images[frame])
+                pic = pic.resize((224,224),Image.BICUBIC)
+                pic = np.asarray(pic)
+                clips.append(pic)
+            clips = np.asarray(clips)
+        '''
+        return clips
+        
+    def __repr__(self):
+        return self.__class__.__name__
 >>>> ![image](https://user-images.githubusercontent.com/80392504/145834129-13674c9b-34f5-43e2-b346-bb4c76d31d51.png) first result
 >>>> ![image](https://user-images.githubusercontent.com/80392504/145834159-44e56d5e-263b-4c9e-b21e-eb695730a52a.png) second result
 
