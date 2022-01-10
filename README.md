@@ -1,8 +1,8 @@
 # -*- Overview -*-
 The code in this github are based on many talented people,including
-*pytorch_i3d.py is based on https://github.com/piergiaj/pytorch-i3d
-*pytorch_c3d.py is based on https://github.com/jfzhang95/pytorch-video-recognition
-*videotransform.py is based on https://github.com/piergiaj/pytorch-i3d/blob/master/videotransforms.py
+* pytorch_i3d.py is based on https://github.com/piergiaj/pytorch-i3d
+* pytorch_c3d.py is based on https://github.com/jfzhang95/pytorch-video-recognition
+* videotransform.py is based on https://github.com/piergiaj/pytorch-i3d/blob/master/videotransforms.py
 
 
 # -*- The Usage of Files -*-
