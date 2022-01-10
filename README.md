@@ -45,8 +45,10 @@ The code in this github are based on many talented people,including
 > The usage of videotransform.py
 >> Transform the video,and the data augmentation of this training is RandomPadResizecrop
 >>> The data augmentation I added is RandomPadResizecrop 
-
-
+>>>> ![image](https://user-images.githubusercontent.com/80392504/145834129-13674c9b-34f5-43e2-b346-bb4c76d31d51.png) first result
+>>>> ![image](https://user-images.githubusercontent.com/80392504/145834159-44e56d5e-263b-4c9e-b21e-eb695730a52a.png) second result
+>>>> 
+    
     class RandomPadResizecrop(object):
     def __init__(self):
         '''
@@ -128,9 +130,6 @@ The code in this github are based on many talented people,including
         
     def __repr__(self):
         return self.__class__.__name__
->>>> ![image](https://user-images.githubusercontent.com/80392504/145834129-13674c9b-34f5-43e2-b346-bb4c76d31d51.png) first result
->>>> ![image](https://user-images.githubusercontent.com/80392504/145834159-44e56d5e-263b-4c9e-b21e-eb695730a52a.png) second result
-
 
 
 # -*- The Dataset -*-
