@@ -1,9 +1,9 @@
 # -*- Overview -*-
 The code in this github are based on many talented people,including
-* pytorch_i3d.py is based on https://github.com/piergiaj/pytorch-i3d
+* pytorch_i3d.py, videotransform.py, train_i3d.py and train_elevator.py are based on https://github.com/piergiaj/pytorch-i3d
 * pytorch_c3d.py is based on https://github.com/jfzhang95/pytorch-video-recognition
 * videotransform.py is based on https://github.com/piergiaj/pytorch-i3d/blob/master/videotransforms.py
-
+* save_bgremoved.py and oprealsense.py are based on https://github.com/IntelRealSense/librealsense/tree/master/wrappers/python/examples 
 
 # -*- The Usage of Files -*-
 """
@@ -69,16 +69,16 @@ The code in this github are based on many talented people,including
         * 8bit_depth are frames which are preprocessed by some codes
         * depthraw are the depth frames which are saved in bag file 
     * THE MEANING OF THE NUMBER:
-        * The form of this video_The number of person_The number of the floor_How many times has this floor be filmed 
+        * modality_subject_floor_trial 
     * 8bit_depth
-        * depth_1_1_1.npy
-        * depth_1_1_2.npy
-        * depth_1_1_3.npy
-        * depth_1_1_4.npy
-        * depth_1_1_5.npy
-        * depth_1_1_6.npy
-        * depth_1_1_7.npy
-        * depth_1_1_8.npy
+        * 8bitdepth_1_1_1.npy
+        * 8bitdepth_1_1_2.npy
+        * 8bitdepth_1_1_3.npy
+        * 8bitdepth_1_1_4.npy
+        * 8bitdepth_1_1_5.npy
+        * 8bitdepth_1_1_6.npy
+        * 8bitdepth_1_1_7.npy
+        * 8bitdepth_1_1_8.npy
         * ...
         * * video demo 
         > ![image](https://user-images.githubusercontent.com/80392504/145842462-4f762e3b-01f2-40ee-bbee-5a2af0e50cae.png)
