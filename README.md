@@ -44,7 +44,7 @@ The code in this github are based on many talented people,including
 * videotransform.py
 > The usage of videotransform.py
 >> Transform the video,and the data augmentation of this training is RandomPadResizecrop
->>> The result of RandomPadResizecrop 
+>>> The data augmentation I added is RandomPadResizecrop 
 
 
     class RandomPadResizecrop(object):
