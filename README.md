@@ -5,6 +5,11 @@ The code in this github are based on many talented people,including
 * videotransform.py is based on https://github.com/piergiaj/pytorch-i3d/blob/master/videotransforms.py
 * save_bgremoved.py and oprealsense.py are based on https://github.com/IntelRealSense/librealsense/tree/master/wrappers/python/examples 
 
+I use Intelrealsense L515 to shoot the video
+* Here is their website https://www.intelrealsense.com/lidar-camera-l515/
+* ![image](https://user-images.githubusercontent.com/80392504/148785575-a6ccc563-52f1-4383-81b8-4b05433107e2.png)
+
+
 # -*- The Usage of Files -*-
 """
 """
