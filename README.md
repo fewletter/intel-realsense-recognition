@@ -47,21 +47,21 @@ The code in this github are based on many talented people,including
 >>> The data augmentation I added is RandomPadResizecrop 
 
 
->>>    class RandomPadResizecrop(object):
->>>    def __init__(self):
->>>        '''
->>>        if data is contour,binary o_size = 640
->>>        if use opnp2.py to open the npfile o_size = 1280
->>>        '''
->>>        self.o_size = 640
->>>        self.size = 224
->>>    
->>>    def __call__(self,images):
->>>        images = np.array(images)
->>>        c,t,h,w = images.shape
->>>        clips = []
->>>        #紀錄手型座標極值
->>>        height_high = []
+    class RandomPadResizecrop(object):
+    def __init__(self):
+        '''
+        if data is contour,binary o_size = 640
+       if use opnp2.py to open the npfile o_size = 1280
+       '''
+       self.o_size = 640
+        self.size = 224
+    
+    def __call__(self,images):
+        images = np.array(images)
+        c,t,h,w = images.shape
+        clips = []
+        #紀錄手型座標極值
+        height_high = []
         height_low = []
         width_left = []
         width_right= []
